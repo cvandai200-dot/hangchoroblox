@@ -1,6 +1,6 @@
 // app/api/queue/status/route.ts
 import { NextResponse } from 'next/server';
-import { getQueueStatus } from '@/lib/queue-store';
+import { getQueueStatus } from '../../../../lib/queue-store';
 
 export async function GET() {
   try {
