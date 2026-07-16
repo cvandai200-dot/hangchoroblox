@@ -1,6 +1,6 @@
 // app/api/queue/join/route.ts
 import { NextRequest, NextResponse } from 'next/server';
-import { checkCanJoin, joinQueue } from '@/lib/queue-store';
+import { checkCanJoin ,joinQueue } from '../../../../lib/queue-store'
 
 export async function POST(request: NextRequest) {
   try {
