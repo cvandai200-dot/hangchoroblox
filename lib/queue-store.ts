@@ -1,5 +1,5 @@
 // lib/queue-store.ts
-// In-memory store for Vercel (resets on cold start)
+// Simple in-memory queue store for Vercel deployment
 
 export interface JoinRecord {
   username: string;
@@ -17,7 +17,6 @@ interface QueueData {
 const MAX_QUEUE = 5000;
 const INITIAL_TOTAL = 987;
 
-// In-memory store (sẽ reset khi server cold start)
 let memoryStore: QueueData = {
   totalJoined: INITIAL_TOTAL,
   usernames: [],
